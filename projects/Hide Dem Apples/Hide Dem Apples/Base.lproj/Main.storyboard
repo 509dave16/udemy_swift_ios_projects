@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Hide_Dem_Apples" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="frosty_blue_apple" translatesAutoresizingMaskIntoConstraints="NO" id="OMI-aq-8Zy">
+                                <rect key="frame" x="8" y="28" width="359" height="212"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="candy-apple-red" translatesAutoresizingMaskIntoConstraints="NO" id="sv3-0W-ors">
+                                <rect key="frame" x="-16" y="408" width="406" height="239"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bs1-Jj-OnP">
+                                <rect key="frame" x="94" y="346" width="167" height="30"/>
+                                <state key="normal" title="Hide candy red apple!">
+                                    <color key="titleColor" red="1" green="0.026596030084166444" blue="0.062095825197733823" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="hideRedApple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fNf-1l-gMl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o43-1x-0Gr">
+                                <rect key="frame" x="94" y="285" width="166" height="30"/>
+                                <state key="normal" title="Hide frosty blue apple!"/>
+                                <connections>
+                                    <action selector="hideBlueApple:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MUW-vC-KaP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="blueAppleButton" destination="o43-1x-0Gr" id="CNK-WM-H99"/>
+                        <outlet property="blueAppleImage" destination="OMI-aq-8Zy" id="0J9-dr-XNw"/>
+                        <outlet property="redAppleButton" destination="Bs1-Jj-OnP" id="qt5-lb-ZRJ"/>
+                        <outlet property="redAppleImage" destination="sv3-0W-ors" id="MNS-ZD-DbY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="589.5" y="438.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="candy-apple-red" width="256" height="256"/>
+        <image name="frosty_blue_apple" width="256" height="256"/>
+    </resources>
+</document>
